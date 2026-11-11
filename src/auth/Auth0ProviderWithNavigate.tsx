@@ -8,10 +8,12 @@ type Props = {
 const Auth0ProviderWithNavigate = ({ children }: Props) => {
   const navigate = useNavigate();
 
-  const domain = import.meta.env.VITE_AUTH0_DOMAIN;
-  const clientId = import.meta.env.VITE_AUTH0_CLIENT_ID;
-  const redirectUri = import.meta.env.VITE_AUTH0_CALLBACK_URL;
-  const audience = import.meta.env.VITE_AUTH0_AUDIENCE;
+  // trim(): a stray tab or space pasted into a hosting dashboard would
+  // otherwise be sent to Auth0 as part of the value and break login.
+  const domain = import.meta.env.VITE_AUTH0_DOMAIN?.trim();
+  const clientId = import.meta.env.VITE_AUTH0_CLIENT_ID?.trim();
+  const redirectUri = import.meta.env.VITE_AUTH0_CALLBACK_URL?.trim();
+  const audience = import.meta.env.VITE_AUTH0_AUDIENCE?.trim();
 
   if (!domain || !clientId || !redirectUri || !audience) {
     throw new Error("unable to initialise auth");
