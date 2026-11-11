@@ -1,0 +1,18 @@
+export const cuisineList = [
+  "Breakfast",
+  "Desserts",
+  "Efik",
+  "Grills",
+  "Hausa",
+  "Igbo",
+  "Jollof Rice",
+  "Nigerian",
+  "Plantain",
+  "Rice Dishes",
+  "Snacks",
+  "Soups",
+  "Street Food",
+  "Suya",
+  "Swallow",
+  "Yoruba",
+];
