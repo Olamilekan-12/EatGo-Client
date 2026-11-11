@@ -134,7 +134,7 @@ const HomePage = () => {
           {isLoading ? (
             <RestaurantGridSkeleton count={3} />
           ) : (
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {more.map((restaurant) => (
                 <RestaurantCard key={restaurant._id} restaurant={restaurant} />
               ))}
@@ -148,7 +148,7 @@ const HomePage = () => {
         <h2 className="text-center text-3xl font-extrabold tracking-tight md:text-4xl">
           Anything delivered
         </h2>
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
           {steps.map(({ icon: Icon, title, text }) => (
             <div key={title} className="flex flex-col items-center gap-3 text-center">
               <span className="flex h-24 w-24 items-center justify-center rounded-full bg-brand-yellow">

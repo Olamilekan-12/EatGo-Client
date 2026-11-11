@@ -12,7 +12,7 @@ const RestaurantCard = ({ restaurant }: Props) => {
   return (
     <Link
       to={`/detail/${restaurant._id}`}
-      className="group flex flex-col gap-3 rounded-3xl border bg-white p-3 shadow-soft transition hover:-translate-y-1 hover:shadow-lift"
+      className="group flex min-w-0 flex-col gap-3 rounded-3xl border bg-white p-3 shadow-soft transition hover:-translate-y-1 hover:shadow-lift"
     >
       <div className="relative">
         <AspectRatio ratio={4 / 3}>

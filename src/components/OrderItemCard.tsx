@@ -52,7 +52,7 @@ const OrderItemCard = ({ order }: Props) => {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="mb-3 grid gap-4 text-base md:grid-cols-4">
+        <CardTitle className="mb-3 grid grid-cols-1 gap-4 text-base md:grid-cols-4">
           <div className="flex flex-col">
             <span className={fieldLabel}>Customer</span>
             <span>{order.deliveryDetails.name}</span>

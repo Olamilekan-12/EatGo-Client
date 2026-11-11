@@ -12,7 +12,7 @@ const SearchResultCard = ({ restaurant }: Props) => {
   return (
     <Link
       to={`/detail/${restaurant._id}`}
-      className="group grid gap-4 rounded-3xl border bg-white p-3 shadow-soft transition hover:-translate-y-0.5 hover:shadow-lift lg:grid-cols-[2fr_3fr] lg:gap-6"
+      className="group grid min-w-0 grid-cols-1 gap-4 rounded-3xl border bg-white p-3 shadow-soft transition hover:-translate-y-0.5 hover:shadow-lift lg:grid-cols-[2fr_3fr] lg:gap-6"
     >
       <div className="relative">
         <AspectRatio ratio={16 / 8}>

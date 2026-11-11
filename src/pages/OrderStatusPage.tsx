@@ -40,7 +40,7 @@ const OrderStatusPage = () => {
           className="space-y-6 rounded-3xl border bg-white p-5 shadow-soft md:p-8"
         >
           <OrderStatusHeader order={order} />
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <OrderStatusDetail order={order} />
             <AspectRatio ratio={16 / 7}>
               <img

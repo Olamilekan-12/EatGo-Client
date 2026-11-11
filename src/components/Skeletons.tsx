@@ -18,7 +18,7 @@ export const RestaurantCardSkeleton = () => (
 );
 
 export const RestaurantGridSkeleton = ({ count = 4 }: { count?: number }) => (
-  <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+  <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
     {Array.from({ length: count }).map((_, i) => (
       <RestaurantCardSkeleton key={i} />
     ))}
@@ -36,13 +36,13 @@ export const CityChipsSkeleton = () => (
 
 /** Horizontal card used on the search results page. */
 export const SearchResultCardSkeleton = () => (
-  <div className="grid lg:grid-cols-[2fr_3fr] gap-5">
+  <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-5">
     <AspectRatio ratio={16 / 6}>
       <Skeleton className="h-full w-full" />
     </AspectRatio>
     <div className="flex flex-col gap-3">
       <Skeleton className="h-8 w-2/3" />
-      <div className="grid md:grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         <Skeleton className="h-5 w-3/4" />
         <div className="flex flex-col gap-2">
           <Skeleton className="h-5 w-24" />
@@ -119,7 +119,7 @@ export const OrderCardSkeleton = () => (
   <div className="space-y-6 rounded-3xl border bg-white p-5 shadow-soft md:p-8">
     <Skeleton className="h-8 w-1/2" />
     <Skeleton className="h-2 w-full rounded-full" />
-    <div className="grid gap-8 md:grid-cols-2">
+    <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
       <div className="flex flex-col gap-3">
         <Skeleton className="h-5 w-48" />
         <Skeleton className="h-5 w-56" />
